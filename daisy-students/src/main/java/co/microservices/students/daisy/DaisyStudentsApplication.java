@@ -1,4 +1,4 @@
-package co.microservices.students.daisy.daisy_students;
+package co.microservices.students.daisy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
