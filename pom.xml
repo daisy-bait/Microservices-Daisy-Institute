@@ -17,6 +17,14 @@
   <name>Spring-Microservices</name>
   <packaging>pom</packaging>
 
+  <modules>
+    <module>daisy-gateway</module>
+    <module>daisy-eureka</module>
+    <module>daisy-config</module>
+
+    <module>daisy-students</module>
+  </modules>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
