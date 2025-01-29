@@ -34,8 +34,7 @@ public class StudentService implements IStudentService {
     @Override
     public Student delete(Long id) {
 
-        Student studentToDelete = studentRepo.findById(id)
-                .orElseThrow(EntityNotFoundException::new);
+        Student studentToDelete = findById(id);
         studentRepo.delete(studentToDelete);
 
         return studentToDelete;
