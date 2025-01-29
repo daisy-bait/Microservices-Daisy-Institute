@@ -23,6 +23,7 @@
     <module>daisy-config</module>
 
     <module>daisy-students</module>
+    <module>daisy-courses</module>
   </modules>
 
   <properties>
