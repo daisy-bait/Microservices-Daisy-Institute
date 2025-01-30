@@ -1,6 +1,7 @@
 package co.microservices.courses.daisy.controller;
 
 import co.microservices.courses.daisy.entity.Course;
+import co.microservices.courses.daisy.http.response.StudentsByCourseResponse;
 import co.microservices.courses.daisy.service.CourseService;
 import co.microservices.courses.daisy.service.interfaces.ICourseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,11 @@ public class CourseController {
     @DeleteMapping("/disable/{id}")
     ResponseEntity<Course> disableCourse(@PathVariable Long id) {
         return ResponseEntity.ok(courseService.deleteCourseById(id));
+    }
+
+    @GetMapping("/find-students/{courseId}")
+    ResponseEntity<StudentsByCourseResponse> getStudentsByCourse(@PathVariable Long courseId) {
+        return ResponseEntity.ok(courseService.getStudentsByCourse(courseId));
     }
 
 }
