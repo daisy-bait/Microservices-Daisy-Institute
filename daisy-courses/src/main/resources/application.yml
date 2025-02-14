@@ -7,8 +7,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/msvc_courses?useSSL=false&serverTimeZone=UTC&allPublicKeyRetrival=true
-    username: root
-    password: 2904
+    username: postgres
+    password: root2904
   jpa:
     hibernate:
       ddl-auto: create-drop

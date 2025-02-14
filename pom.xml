@@ -19,8 +19,8 @@
 
   <modules>
     <module>daisy-gateway</module>
-    <module>daisy-eureka</module>
-    <module>daisy-config</module>
+    <module>msvc-eureka</module>
+    <module>msvc-config</module>
 
     <module>daisy-students</module>
     <module>daisy-courses</module>
