@@ -1,19 +1,5 @@
 spring:
   application:
     name: msvc-gateway
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: daisy-students
-          uri: http://localhost:8090
-          predicates:
-            - Path=/api/student/**
-        - id: daisy-courses
-          uri: http://localhost:9090
-          predicates:
-            - Path=/api/course/**
   config:
     import: optional:configserver:http://localhost:8888

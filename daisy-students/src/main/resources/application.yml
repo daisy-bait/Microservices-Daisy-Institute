@@ -1,34 +1,5 @@
-server:
-  port: 8090
-
 spring:
   application:
     name: daisy-students
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/msvc_students?useSSL=false&serverTimeZone=UTC&allPublicKeyRetrival=true
-    username: root
-    password: root2904
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-    database: mysql
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    properties:
-      hibernate:
-        format_sql: true
   config:
     import: optional:configserver:http://localhost:8888
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
-logging:
-  level:
-    org:
-      hibernate:
-        SQL: DEBUG
